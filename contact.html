@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style_website.css">
+</head>
+
+<body style="background-color: rgb(181, 204, 228);">
+
+        <div class="nav">
+                <a title="Home" href="personal_website.html"><img class="icon"
+                        src="HOME.png"
+                        ></a>
+                <a title="Achievements" href="achievement.html"><img class="icon"
+                        src="ACHIEVEMENTS.png"
+                        > </a>
+                <a title="Hobbies" href="hobbies.html"><img class="icon"
+                        src="HOBBIES.png"
+                        > </a>
+                <a title="Contact Me" href="contact.html"><img class="icon"
+                        src="CONTACT.png"
+                        ></a>
+                    </div>
+    <h1 style="font-size: 60px;color:rgb(11, 9, 124)">Connect with me:</h1>
+
+    <p class="cont" style="font-size: 40px;"> <a href="mailto:23B0971@iitb.ac.in"><img title="Email" class="icon1"
+                src="GMAIL.png"></a>
+
+        <a
+            href="https://www.linkedin.com/in/mayank-soni-qwertyuiop?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img title="LinkedIn" class="icon1"
+                src="LINKEDIN.png"></a>
+
+
+        <a href="https://www.instagram.com/sonimayank_/"><img title="Instagram" class="icon1" src="INSTA.png"></a>
+
+    </p>
+
+    <h1 style="font-size: 40px;">Feedback about website</h1>
+    <p style="font-size: 40px;">To provide Feedback about this website:<br>
+                <textarea id="feedback"  cols="40" rows="10" placeholder="Type your Feedback here"></textarea>
+        </p>
+        <button id="feed" onclick="al()" style="font-size: 40px;text-align: center;">Submit your Feedback</button>
+
+
+<script>
+        function al(){
+                const feedback = document.getElementById('feedback').value;
+                
+
+                if (feedback.trim() === "") {
+                    alert("Please enter your feedback.");
+                    return;
+                }
+    
+                // Send feedback to the backend
+                fetch('http://localhost:3000/send-feedback', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ feedback: feedback })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    alert(data.message);
+                    document.getElementById('feedback').value = '';
+                })
+                .catch(error => {
+                    alert("Failed to submit feedback. Please try again.");
+                    console.error("Error:", error);
+                });
+        }
+</script>
+
+</body>
+
+</html>

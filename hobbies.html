@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies</title>
+    <link rel="stylesheet" href="style_website.css">
+</head>
+
+<body class="hob">
+
+    <div class="nav">
+        <a title="Home" href="personal_website.html"><img class="icon"
+                src="HOME.png"
+                ></a>
+        <a title="Achievements" href="achievement.html"><img class="icon"
+                src="ACHIEVEMENTS.png"
+                > </a>
+        <a title="Hobbies" href="hobbies.html"><img class="icon"
+                src="HOBBIES.png"
+                > </a>
+        <a title="Contact Me" href="contact.html"><img class="icon"
+                src="CONTACT.png"
+                ></a>
+            </div>
+
+
+
+    <form class="fh" style="text-align: center;">
+        <h1 style="font-size: 60px;">List of Hobbies</h1>
+        <p style="font-size:30px">Select your hobbies:</p>
+
+        <div class="wardrobe">
+            <div class="wardrobe-item">
+                <input type="checkbox" id="hobby1" class="asdf">
+                <label for="hobby1">
+                    <img src="cricket.png" alt="Cricket" class="hobby-img">
+                    <p class="hobby-text">Cricket Bookkeeping</p>
+                </label>
+            </div>
+            <div class="wardrobe-item">
+                <input type="checkbox" id="hobby2" class="asdf">
+                <label for="hobby2">
+                    <img src="cricket1.png" alt="Cricket 1" class="hobby-img">
+                    <p class="hobby-text">Playing Cricket</p>
+                </label>
+            </div>
+            <div class="wardrobe-item">
+                <input type="checkbox" id="hobby3" class="asdf">
+                <label for="hobby3">
+                    <img src="volleyball.png" alt="Volleyball" class="hobby-img">
+                    <p class="hobby-text">Playing Volleyball</p>
+                </label>
+            </div>
+            <div class="wardrobe-item">
+                <input type="checkbox" id="hobby4" class="asdf">
+                <label for="hobby4">
+                    <img src="hindi.png" alt="Hindi" class="hobby-img">
+                    <p class="hobby-text">Reading Hindi Literature</p>
+                </label>
+            </div>
+            <div class="wardrobe-item">
+                <input type="checkbox" id="hobby5" class="asdf">
+                <label for="hobby5">
+                    <img src="music.jpeg" alt="Music" class="hobby-img">
+                    <p class="hobby-text">Listening to Music</p>
+                </label>
+            </div>
+        </div>
+
+        <p style="font-size: 40px;">Any other hobby(s):</p>
+        <textarea name="otherhobby" id="oh" cols="30" rows="5" placeholder="Type your hobby(s) here!"
+            style="font-size: 40px;"></textarea><br>
+        <button id="submitbutton" onclick="func()"   style="font-size: 60px;text-align: center;display:flexbox;margin-left:50vw;margin-right: 50vw ;">SUBMIT</button>
+    </form>
+
+
+
+    
+    <script>
+        function func(){
+            alert("Your response is submitted.")
+        }
+    </script>
+</body>
+
+</html>

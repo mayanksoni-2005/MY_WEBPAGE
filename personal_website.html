@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style_website.css">
+    <title>My Website</title>
+</head>
+
+<body class="homepage">
+    <!--<div id="navig">
+    <nav>
+        <button ><a href="personal_website.html">Home</a></button>
+        <button><a href="Achievements.html">Achievements</a></button>
+        <button><a href="Hobbies.html">Hobbies</a></button>
+        <button><a href="contact.html">Contact Me</a></button>
+    </nav>
+</div>-->
+    <div class="nav">
+        <a title="Home" href="personal_website.html"><img class="icon" src="HOME.png"></a>
+        <a title="Achievements" href="achievement.html"><img class="icon" src="ACHIEVEMENTS.png"> </a>
+        <a title="Hobbies" href="hobbies.html"><img class="icon" src="HOBBIES.png"> </a>
+        <a title="Contact Me" href="contact.html"><img class="icon" src="CONTACT.png"></a>
+    </div>
+
+
+    <img src="my_image.png" id="my-image"  class="my-image">
+   
+
+
+
+    <main>
+        <p>
+        <h1 class="name">Mayank Soni</h1>
+        <h2 class="college">IITB CSE'27</h2>
+
+        <div class="intro">
+            <div class="intro_text">
+                <p>Hello there! I'm Mayank Soni, and I'm thrilled to welcome you to my little corner of the internet.
+                    This space is more than just a collection of pixels and code; it's a reflection of who I am, what I
+                    love, and the journey I'm on.
+                </p>
+                <p>
+                    I am currently a Computer Science undergrad at Indian Institute of Technology Bombay.
+                    This website is created as an assignment in Software and Systems Lab course in second semester of my
+                    B.Tech.
+                </p>
+            </div>
+
+        </div>
+
+
+
+
+
+        <!-- <img src="sds" class="myphoto"> -->
+        <h1 style="font-size: 60px;">Current Timetable</h1>
+        <img src="timetable.png">
+
+        <footer class="footer">
+            <a style="font-size:30px" href="mailto:23b0971@iitb.ac.in" title="23b0971@iitb.ac.in"> Connect via Email 📧
+            </a>
+        </footer>
+
+
+
+    </main>
+
+    <script>
+        document.getElementById('my-image').addEventListener('click', function(event) {
+            const rect = this.getBoundingClientRect();
+            const x = event.clientX - rect.left;
+            const y = event.clientY - rect.top;
+
+            // Check if the click is within the middle portion of the image
+            if (x > rect.width / 4 && x < (3 * rect.width) / 4 && y > rect.height / 4 && y < (3 * rect.height) / 4) {
+                alert('There is no image to show. Thanks for showing Interest 😀');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

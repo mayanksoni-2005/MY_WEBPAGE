@@ -1,0 +1,213 @@
+#navig{
+    background-color: blue;
+    a{
+        color: Orange;
+        text-decoration: none;
+                
+    }
+    button{
+        background-color:green;
+
+    }
+}
+
+.edtable{
+    border: 2px solid black;
+    background-color: rgb(19, 216, 101);
+    margin:px;
+    display:flex;
+    width:99vw;
+}
+.edtable td{
+    border: 1px solid black;
+    padding:5px;
+    margin:5px;
+    text-align:center;
+    font-size: 40px;
+}
+.ex{
+    width:90vw;
+}
+
+
+
+
+.footer{
+    text-align: center;
+    border: 0.5px solid black;
+    margin-bottom: 0px;
+}
+.ach{
+    display: flex;
+    font-size: 40px;
+}
+.ach td{
+    text-align: center;
+    padding: 20px;
+    width:100vw;
+}
+.heading{
+    text-align: center;
+    color: rgb(27, 13, 40);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.navi{
+    a:hover{
+       
+    }  
+}
+.homepage{
+    background-color: rgb(181, 204, 228);
+}
+.fh{
+    font-size: xx-large ;
+}
+/*input.a {
+    width:;
+    height:;
+}*/
+.hob{
+    background-color:rgb(181, 204, 228) ;
+    color:
+}
+
+footer{
+    a:hover{
+        color:black;
+        background-color: rgb(180, 237, 225);
+    }
+    a:link{
+        color:black;
+        text-decoration: none;
+    }
+    a:visited{
+        color:black;
+        text-decoration: none;
+    }
+}
+
+.icon {
+    width: 300px;
+    height: 240px;
+    display: flexbox;
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-right: 100px;
+    transition: width 0.5s, height 0.5s, margin-top 0.5s;
+}
+
+.icon:hover {
+    width: 400px;
+    height: 320px;
+    margin-top: 0px;
+}
+
+
+
+.intro{
+    font-size: 40px;
+    display: flex;
+    align-items: flex-start;  
+    overflow: hidden;
+}
+
+
+.my-image {
+    float: right; /* Float the image to the right */
+    margin-left: 10px; /* Space between text and image */
+    max-width: 200%; /* Ensure the image scales properly */
+    width: 600px; /* Adjust to your preferred width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.wardrobe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.wardrobe-item {
+    text-align: center;
+    width: 550px;
+}
+
+.hobby-img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.fh {
+    text-align: center;
+}
+
+#submitbutton {
+    font-size: 60px;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+}
+
+
+
+
+
+.intro_text{
+    flex: 1;
+}
+.name{
+    font-size: 60px;
+}
+.college{
+    font-size: 40px;
+}
+.cont{
+    a{
+        color:green;
+        text-decoration: none;
+    }
+    a:hover{
+        color:blue;
+    }
+    a:visited{
+        color:green;
+    }
+    img{
+        height:200px;
+    }  
+    
+}
+
+.icon1{
+    width:300px;
+    height:240px;
+    display: flexbox;
+    margin-top:50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: width 0.5s, height 0.5s, margin-top 0.5s;
+}
+
+.icon1:hover{
+    width:310px;
+    height:240px;
+    margin-top:0px;
+    
+}
+
+
+input.asdf{
+    width:40px;
+    height: 40px;
+} 
+    
+
+/* Increase the size of the checkboxes */
+.asdf {
+    width: 300px; /* Adjust size as needed */
+    height: 300px; /* Adjust size as needed */
+    margin-right: 10px; /* Space between checkbox and label text */
+    cursor: pointer; /* Pointer cursor on hover */
+}

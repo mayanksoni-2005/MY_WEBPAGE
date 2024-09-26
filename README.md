@@ -28,8 +28,8 @@ To set up this project on your local machine, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/your-repository.git
-   cd your-repository
+   git clone [https://github.com/yourusername/your-repository.git](https://github.com/mayanksoni-2005/my_webpage.git)
+   cd my_webpage
 
 2. **Install Dependencies:**
    Run the following commands to initialize your project and install the required dependencies:

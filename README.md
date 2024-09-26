@@ -9,7 +9,6 @@ Welcome to my personal webpage! This site provides details about me, including m
 - [Installation](#installation)
 - [Running the Server](#running-the-server)
 - [Usage](#usage)
-- [License](#license)
 
 ## Features
 

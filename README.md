@@ -46,7 +46,9 @@ To set up this project on your local machine, follow these steps:
 ## Usage
 
 - **Open the Website**: \
-  Open any HTML file from the project directory in your web browser to view the website.
+  Open any HTML file from the project directory in your web browser using live server to view the website.\
+  You can also copy paste the http://localhost:3000 to view the webpage, but it is magnified view of the original.\
+  Live server is preferred to view the webpage.
   
 - **Send Feedback**: \
   Use the contact form to send me feedback or inquiries.
